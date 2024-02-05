@@ -1,1 +1,1 @@
-A restaurant webpage built with plain HTML.
+A restaurant webpage designed using HTML and CSS.
