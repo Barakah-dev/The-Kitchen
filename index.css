@@ -1,0 +1,247 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-between; 
+  padding: 30px;
+  width: 96%;
+}
+.header h3{
+  display: inline;
+  font-size: 20px;
+  color: red;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+nav a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+nav a:hover{
+  color: red;
+}
+nav a:active{
+  color: green;
+}
+
+.display{
+  background-image: url(images/jollof-bg.jpg);
+  background-position: top 40% right 10%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 550px;
+  padding: 0 300px;
+  color: white;
+  right: 3px;
+  filter: brightness(0.8);
+}
+.display h1{
+  font-size: 80px;
+  position: absolute;
+  top: 65px;
+  right:85px;
+  filter: brightness(100%);
+}
+.display p{
+    position: absolute;
+    top: 220px;
+    font-size: 20px;
+    right: 83px;
+}
+.display button{
+  position: absolute;
+  bottom: 180px;
+  right: 85px;
+  font-size: 20px;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.food-section{
+  padding: 40px 60px;
+}
+.food-section h1{
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dishes{
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.dishes img{
+  width: 450px;
+  height: 350px;
+  }
+.dishes h2{
+  text-transform: uppercase;
+}
+.dishes button{
+  padding: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.reviews-section{
+  padding: 15px 0 0;
+  height: 400px;
+  background-image: url(images/pounded-yam-1.jpg);
+  background-position: top 30% right;
+  background-size: cover;
+  filter: brightness(0.9);  
+}
+.reviews-section h2{
+  text-align: center;
+  margin: 40px 0 35px;
+  padding: 10px 0 10px;
+  color: black;
+}
+.reviews-div{
+  display: flex;
+  padding: 10px 8em;
+  justify-content: space-around;
+}
+.review{ 
+  background-color: rgb(181, 154, 121);
+  box-shadow: 0 20 0 rgba(0, 0, 0, 0.3);
+  padding: 10px 30px;
+  width: 300px; 
+}
+.form-section{
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form{
+  /* padding: 80px 180px 60px; */
+}
+.form input, textarea{
+  display: block;
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 50em;
+}
+.btn{
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 30px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+footer{
+  padding: 60px;
+  background-color: black;
+  color: grey;
+}
+.info{
+  display: flex;
+  justify-content: space-around;
+}
+.head{
+  width: 400px;
+  padding-left: 20px;
+}
+.head h4{
+  color: white;
+}
+.red{
+  color: red;
+}
+.addy{
+  position: relative;
+}
+.email{
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 70%;
+}
+.submit{
+  margin-top: 15px;
+  position: absolute;
+  right: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.copyright{
+  margin-top: 50px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.icon{
+  padding: 0 20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews-section{
+    height: 700px;
+    background-position: center;
+  }
+  .reviews-div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 70px;
+    gap: 10px;
+  }
+  
+  .form input, textarea{
+    display: block;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 30em;
+  }
+  footer{
+    padding-left: 20px;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+  }  
+  .addy{
+    margin-bottom: 20px;
+  }
+  .submit{
+    right: 20%;
+  }
+}

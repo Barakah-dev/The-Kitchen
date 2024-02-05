@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!--css link: <link rel="stylesheet" href="index.css"> -->
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="container">
@@ -54,7 +54,7 @@
     </section>  
     
     <section class="reviews-section">
-      <h4>Hear what about customers say about us</h4>
+      <h2>Hear what about customers say about us</h2>
         <div class="reviews-div">
           <div class="review">
             <p>"I received my food earlier than I expected and it was superp. Thank 
@@ -74,14 +74,16 @@
         </div>
     </section>
 
-    <section class="message">
-      <input type="text" placeholder="Enter your name">
-      <input type="email" placeholder="Enter email address">
-      <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-      <button class="btn">Send Message</button>
+    <section class="form-section">
+      <form class="form">
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter email address">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <button class="btn">Send Message</button>
+      </form>
     </section>
   
-    <div class="footer">
+    <footer>
       <div class="info">
         <div class="head">
           <h4>About Us</h4>
@@ -97,8 +99,8 @@
         </div>
         <div class="head">
           <h4>Newsletter</h4>
-          <p>Enter your email address to receive our newsletters.</p>
           <div class="addy">
+            <label for="email">Enter your email address to receive our newsletters</label>
             <input class="email" type="email" placeholder="Email address">
             <button class="submit" type="submit">Submit</button>
           </div>
@@ -121,7 +123,7 @@
       </div>
       
       
-    </div>
+    </footer>
   </div>
 </body>
 </html>
